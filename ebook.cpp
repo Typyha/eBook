@@ -8,7 +8,7 @@ using namespace std;
 class Book {
 public:
     Book(int max_page)
-        :pages_(max_page) {
+        :pages_(max_page + 1) {
     }
 
     void ChangePages(int, int);
@@ -58,4 +58,5 @@ int main() {
             cout << ebook.GetCheer(id) << endl;
         }
     }
+    return 0;
 }
